@@ -16,7 +16,7 @@ const Orders = () => {
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>
             <span>Order</span>
-            <span className='sm:text-left text-right'>Status</span>
+            <span className='hidden xsm:grid sm:text-left text-right'>Status</span>
             <span className='hidden md:grid'>Last Order</span>
             <span className='hidden sm:grid'>Method</span>
           </div>
@@ -32,7 +32,7 @@ const Orders = () => {
                       <p className='text-gray-800 text-sm'>{order.name.first}</p>
                     </div>
                   </div>
-                  <p className='text-gray-600 sm:text-left text-right'>
+                  <p className='hidden xsm:flex text-gray-600 justify-end sm:justify-start'>
                       <span className={`p-2 rounded lg
                        ${order.status === 'Processing' ? 'bg-green-200' :
                           order.status === 'Completed' ? 'bg-blue-200' :
