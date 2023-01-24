@@ -14,12 +14,12 @@ const RecentOrders = () => {
               <div className='bg-purple-100 rounded-lg p-3'>
                 <FaShoppingBag className='text-purple-800'/>
               </div>
-              <div className='pl-4 flex w-full'>
+              <div className='pl-4 flex w-full flex-col sm:flex-row'>
                 <div>
                   <p className='text-gray-800 font-bold'>₱{order.total}</p>
                   <p className='text-gray-400 text-sm'>{order.name.first}</p>
                 </div>
-                <div className='flex self-center ml-auto md:hidden lg:flex'>{order.date}</div>
+                <div className='flex sm:self-center sm:ml-auto md:hidden lg:flex'>{order.date}</div>
               </div>
               
             </li>
