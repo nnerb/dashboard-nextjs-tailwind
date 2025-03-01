@@ -1,38 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js & Tailwind CSS Dashboard
 
-## Getting Started
+A well-designed and responsive frontend dashboard built using Next.js (App Router), Tailwind CSS, and Chart.js.
 
-First, run the development server:
+## Tech Stack
 
+- **Frontend:** Next.js (App Router), React.js, Tailwind CSS
+- **Charts & Data Visualization:** Chart.js
+
+## Features
+
+- Responsive and modern UI with Tailwind CSS
+- Dashboard displaying key insights using Chart.js
+- Customer management page with static data
+- Orders management page with static data
+
+## Pages Structure
+
+- `/dashboard` - Main dashboard with data visualization
+- `/customer` - Customer management section with static data
+- `/orders` - Orders management section with static data
+
+## Installation & Setup
+
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (latest LTS recommended)
+
+### Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/your-username/nextjs-dashboard.git
+cd nextjs-dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Run the Development Server
+```bash
+npm run dev
+```
+The app should now be running on `http://localhost:3000`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Deployment
+To deploy on Vercel, run:
+```bash
+vercel
+```
+Follow the setup instructions and your app will be live!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributing
+Feel free to fork the repo and submit pull requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT License
